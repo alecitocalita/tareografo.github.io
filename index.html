@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizador de Tareas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Organizador de Tareas</h1>
+    </header>
+
+    <div class="main-content">
+        <section class="task-form">
+            <input type="text" id="taskName" placeholder="Nombre de la Tarea">
+            <input type="date" id="dueDate">
+            <button onclick="addTask()">Agregar Tarea</button>
+            <!-- Botón de IA para organizar tareas -->
+            <button onclick="organizeTasksAI()">Organizar Tareas con IA</button>
+        </section>
+
+        <section id="taskList" class="task-list">
+            <ul id="tasks"></ul>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
